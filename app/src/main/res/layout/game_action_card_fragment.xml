@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    tools:context="com.ath100.ath100thegame.GameActionCardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/cardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardImage"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Random Card Heading"
+            />
+
+        <TextView
+            android:id="@+id/cardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardImage"
+            android:layout_below="@id/cardHeading"
+            android:textSize="14dp"
+            android:text="This is a random text for a random action card, really interesting, isn't it? Well do this and this."
+            />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

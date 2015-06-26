@@ -5,16 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
      >
-
     <fragment
-        android:id="@+id/gameCardFragment"
-        class="com.ath100.ath100thegame.GameCardFragment"
+        android:id="@+id/playerFragment"
+        class="com.ath100.ath100thegame.GamePlayerFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <fragment
-        android:id="@+id/playerFragment"
-        class="com.ath100.ath100thegame.GamePlayerFragment"
+        android:id="@+id/gameCardFragment"
+        class="com.ath100.ath100thegame.GameActionCardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <fragment
+        android:id="@+id/placeFragment"
+        class="com.ath100.ath100thegame.GamePlaceFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
