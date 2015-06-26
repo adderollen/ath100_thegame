@@ -1,9 +1,45 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.ath100.ath100thegame.GamePlaceFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ath100.ath100thegame.GamePlaceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:id="@+id/cardHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Random Card Heading"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/cardImage"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/cardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cardHeading"
+        android:layout_toLeftOf="@+id/cardImage"
+        android:text="This lly interesting, isn't it? Well dis."
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/black" />
+
+
+ </RelativeLayout>
 </FrameLayout>
+
+

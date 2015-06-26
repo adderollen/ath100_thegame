@@ -7,7 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class GameActivity extends ActionBarActivity implements GamePlayerFragment.OnFragmentInteractionListener, GameActionCardFragment.OnFragmentInteractionListener {
+public class GameActivity extends ActionBarActivity implements GamePlayerFragment.OnFragmentInteractionListener,
+        GameActionCardFragment.OnFragmentInteractionListener, GamePlaceFragment.OnFragmentInteractionListener {
 
     private String city;
     private int nbrOfPlayers;
@@ -23,7 +24,7 @@ public class GameActivity extends ActionBarActivity implements GamePlayerFragmen
             nbrOfPlayers = extras.getInt("EXTRA_NBR_OF_PLAYERS");
         }
 
-        System.out.println(city+nbrOfPlayers);
+        System.out.println(city + nbrOfPlayers);
     }
 
 
