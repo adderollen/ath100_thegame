@@ -11,10 +11,12 @@ import android.widget.Button;
  */
 public class WelcomePageActivity extends Activity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.welcome_page);
         Button startButton = (Button) findViewById(R.id.startButton);
 
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -25,5 +27,6 @@ public class WelcomePageActivity extends Activity {
                 return;
             }
         });
+
     }
 }
